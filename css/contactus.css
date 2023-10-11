@@ -1,0 +1,226 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* //////////////////////////////////////////// */
+/* BODY FORMAT */
+body {
+    margin-inline: auto;
+    background-color: rgb(241, 241, 241);
+    font-family: 'Poppins', sans-serif;
+}
+
+/* //////////////////////////////////////////// */
+/* HEADER */
+body > header {
+    height: 150px;
+
+    background-image: url('../img/contactus/header.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    box-shadow: 0 0 15px rgba(126, 126, 126, 0.295);
+}
+
+body > header > div {
+    height: inherit;
+
+    background-color: hsla(0, 0%, 0%, 0.158);
+    padding: 2rem 0;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+}
+
+body > header > div > div {
+    width: 80%;
+    margin-inline: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+div.logo {
+    width: 12rem;
+    transition: transform 0.5s;
+}
+
+div.logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+div.logo:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+body > header > div > div > nav {
+    margin-top: 0.5rem;
+}
+
+body > header > div > div > nav > ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    column-gap: 2rem;
+    
+    list-style: none;
+}
+
+body > header > div > div > nav > ul > li > a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.25rem;
+    transition: 0.8s;
+}
+
+body > header > div > div > nav > ul > li:not(:hover) a.a {
+    color: rgba(0, 0, 0, 0.205);
+}
+
+ul.ul:not(:hover) a.a {
+    color: black;
+}
+
+body > header > div > div > nav > ul > li:hover a.a{
+    font-size: 1.4rem;
+}
+
+body > header > div > h1.slogan {
+    color: whitesmoke;
+    text-shadow: 0 0 10px rgba(126, 126, 126, 0.726);
+    position: absolute;
+    top: 200px;
+}
+
+/* //////////////////////////////////////////// */
+/* REVIEW */
+section.review {
+    width: 70%;
+    margin-inline: auto;    
+    margin-top: 3rem;
+}
+
+section.review > h1 {
+    font-size: 3rem;
+}
+
+div.review-container{
+    width: 90%;
+    margin-inline: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+div.customer {
+    width: 17rem;
+}
+
+div.img {
+    width: 100%;
+    height: 17rem;
+    padding: 1rem;
+}
+
+div.img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+div.customer p, div.customer-info {
+    text-align: justify;
+    text-align: center;
+}
+
+/* //////////////////////////////////////////// */
+/* ONLINE CONTACT */
+section.online-contact {
+    width: 70%;
+    margin-inline: auto;
+    margin-top: 5rem;
+}
+
+section.online-contact > h1 {
+    font-size: 3rem;
+}
+
+div.contact {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    row-gap: 1rem;
+    padding: 2rem;
+    border: 2px solid black;
+}
+
+div.email, div.phone {
+    height: 2rem;
+}
+
+div.input label, div.submit label {
+    display: inline-block;
+    width: 15%;
+}
+
+div.submit label {
+    visibility: hidden;
+}
+
+div.comment {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+input {
+    font-family: 'Poppins', sans-serif;
+}
+
+input[type=text] {
+    padding: 0.2rem;
+    width: 25%;
+}
+
+textarea {
+    font-family: 'Poppins', sans-serif;
+    width: 50%;
+    padding: 0.2rem;
+}
+
+div.submit input {
+    padding: 1rem 2rem;
+}
+
+/* //////////////////////////////////////////// */
+/* PHYSICAL CONTACT */
+section.physical-contact {
+    width: 70%;
+    margin-inline: auto;
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+}
+
+section.physical-contact > h1 {
+    font-size: 3rem;
+}
+
+section.physical-contact table {
+    width: 100%;
+    margin-bottom: 1rem;
+}
+

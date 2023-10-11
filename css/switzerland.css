@@ -1,0 +1,257 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* //////////////////////////////////////////// */
+/* BODY FORMAT */
+body {
+    margin-inline: auto;
+    background-color: rgb(241, 241, 241);
+    font-family: 'Poppins', sans-serif;
+}
+
+/* //////////////////////////////////////////// */
+/* HEADER */
+body > header {
+    height: 100vh;
+}
+
+div.hl1 {
+    width: 100%;
+    height: 100vh;
+    background-image: url(../img/switzerland/switzerland-header.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+div.hl2 {
+    height: 100vh;
+}
+
+div.hl3 {
+    padding-top: 2rem;
+    width: 80%;
+    margin-inline: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+div.logo {
+    width: 12rem;
+    transition: transform 0.5s;
+}
+
+div.logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+div.logo:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+div.hl3 > nav {
+    margin-top: 0.5rem;
+}
+
+div.hl3 > nav > ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    column-gap: 2rem;
+    
+    list-style: none;
+}
+
+body > header > div > div > div > nav > ul > li > a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 1.25rem;
+    transition: 0.8s;
+}
+
+ul.ul:not(:hover) a.a {
+    color: rgb(255, 255, 255);
+}
+
+body > header > div > div > div > nav > ul > li:hover a.a {
+    font-size: 1.4rem;
+}
+
+body > header > div > div > div > nav > ul > li:not(:hover) a.a {
+    color: rgba(255, 255, 255, 0.205);
+}
+
+/* //////////////////////////////////////////// */
+/* INTRO HEADER */
+section.intro {
+    width: 85%;
+    margin-inline: auto;
+    position: absolute;
+    bottom: 10%;
+    left: 5%;
+}
+
+div.intro-desc {
+    width: 40%;
+    padding: 2rem;
+}
+
+div.intro-desc :nth-child(1) {
+    font-size: 3.5rem;
+    color: white;
+    font-weight: bold;
+}
+
+div.intro-desc :nth-child(2) {
+    font-size: 1rem;
+    font-weight: lighter;
+    color: rgb(230, 230, 230);
+}
+
+div.navcard-container {
+    width: 50%;
+    height: 16rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    row-gap: 1rem;
+    column-gap: 2rem;
+}
+
+div.navcard-container a {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    width: 40%;
+    height: 6rem;
+    color: white;
+    text-decoration: none;
+}
+
+div.navcard {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 20px rgba(121, 121, 121, 0.3);
+    font-size: 0.8rem;
+    width: 100%;
+    height: 100%;
+    border-radius: 1rem;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
+    background-color: rgba(255, 255, 255, 0.062);
+    backdrop-filter: blur(10px);
+
+    transition: all 0.5s ease-in-out;
+}
+
+div.navcard p {
+    font-size: 1.2rem;
+}
+
+div.navcard:hover {
+    transform: scale(1.03,1.03);
+    cursor: pointer;
+}
+
+/* //////////////////////////////////////////// */
+/* CONTENT */
+section.content {
+    width: 70%;
+    margin-top: 6rem;
+    margin-inline: auto;
+}
+
+section.content > h1 {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+
+div.infoCards {
+    width: 100%;
+    height: 22rem;
+    border-radius: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    column-gap: 2rem;
+    padding: 1rem;
+    margin-bottom: 5rem;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
+    transition: all 0.8s ease-in-out;
+    overflow: hidden;
+}
+
+div.infoCards:hover {
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
+    transform: scale(1.02,1.02);
+}
+
+div.infoCards.one {
+    flex-direction: row-reverse;
+}
+
+div.infoCards.three {
+    flex-direction: row-reverse;
+}
+
+div.infoImg {
+    width: 30%;
+    height: 90%;
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
+    transition: all 1s ease-in-out;
+}
+
+div.infoImg:hover {
+    transform: scale(1.03,1.03);
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
+}
+
+div.infoImg:hover img {
+    transform: scale(1.05,1.05) 
+}
+
+div.infoImg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all 1.5s ease-in-out;
+}
+
+div.infoDesc {
+    width: 60%;
+    height: 90%;
+    margin-top: -1.5rem;
+    padding: 1rem;
+}
+
+div.infoDesc h1 {
+    font-size: 2rem;
+    line-height: 1;
+}
+
+div.infoDesc p {
+    font-size: 1.1rem;
+    line-height: 2;
+    text-align: justify;
+}

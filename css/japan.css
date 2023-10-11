@@ -1,0 +1,257 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* //////////////////////////////////////////// */
+/* BODY FORMAT */
+body {
+    margin-inline: auto;
+    background-color: rgb(241, 241, 241);
+    font-family: 'Poppins', sans-serif;
+}
+
+/* //////////////////////////////////////////// */
+/* HEADER */
+body > header {
+    height: 80vh;
+
+    overflow: hidden;
+    position: relative;
+}
+
+video.video {
+    position: absolute;
+    left: 0;
+    top: -80px;
+    z-index: -1;
+}
+
+@media (min-aspect-ratio: 16/9) {
+    .video {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-aspect-ratio: 16/9) {
+    .video {
+        width: auto;
+        height: 100%;
+    }
+}
+
+div.hl1 {
+    height: inherit;
+
+    background-color: hsla(0, 0%, 0%, 0.158);
+    padding: 2rem 0;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+
+    position: relative;
+}
+
+div.hl2 {
+    width: 80%;
+    margin-inline: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+div.logo {
+    width: 12rem;
+    transition: transform 0.5s;
+}
+
+div.logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+div.logo:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+div.hl2 > nav {
+    margin-top: 0.5rem;
+}
+
+div.hl2 > nav > ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    column-gap: 2rem;
+    
+    list-style: none;
+}
+
+body > header > div > div > nav > ul > li > a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 1.25rem;
+    transition: 0.8s;
+}
+
+body > header > div > div > nav > ul > li:not(:hover) a.a {
+    color: rgba(255, 255, 255, 0.205);
+}
+
+ul.ul:not(:hover) a.a {
+    color: rgb(255, 255, 255);
+}
+
+body > header > div > div > nav > ul > li:hover a.a {
+    font-size: 1.4rem;
+}
+
+/* //////////////////////////////////////////// */
+/* HEADER CARDS */
+div.hcards {
+    width: 80%;
+    margin-inline: auto;
+    margin-top: -5.67rem;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    row-gap: 1rem;
+
+    z-index: 1;
+}
+
+a.hcard {
+    z-index: inherit;
+    text-decoration: none;
+}
+
+div.hcard {
+    width: 13rem;
+    height: 17rem;
+
+    border: 0.35rem solid white;
+    border-radius: 1rem;
+    box-shadow: 0 0 20px rgba(121, 121, 121, 0.3);
+
+    position: relative;
+
+    z-index: inherit;
+}
+
+div.hcard img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+    border-radius: 0.7rem;
+    z-index: inherit;
+}
+
+div.desc {
+    width: 100%;
+    height: 100%;
+    padding: 1rem;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+    color: white;
+    text-align: center;
+
+    border-radius: 0.7rem;
+
+    background-color: rgba(0, 0, 0, 0.13);
+    backdrop-filter: blur(5px);
+
+    position: absolute;
+    top: 0;
+
+    opacity: 0;
+
+    transition: 0.5s;
+}
+
+div.desc p {
+    font-size: 1.3rem;
+}
+
+a.hcard:hover div.desc {
+    opacity: 1;
+}
+
+/* //////////////////////////////////////////// */
+/* CONTENT */
+section.content {
+    width: 60%;
+    margin-inline: auto;
+    margin-top: 25vh;
+}
+
+section.content > h1 {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+
+div.info {
+    width: 100%;
+    margin-bottom: 7rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    column-gap: 2rem;
+}
+
+div.foodInfo {
+    flex-direction: row-reverse;
+}
+
+div.sceneryInfo {
+    flex-direction: row-reverse;
+}
+
+div.pic {
+    width: 20rem;
+    height: 13rem;
+    border-radius: 1rem;
+    box-shadow: 0 0 20px rgba(121, 121, 121, 0.3);
+}
+
+div.pic img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 1rem;
+    border: 3px solid white;
+}
+
+div.contentDesc {
+    width: 17rem;
+    flex-grow: 1;
+}
+
+div.contentDesc p {
+    line-height: 2;
+    text-align: justify;
+}

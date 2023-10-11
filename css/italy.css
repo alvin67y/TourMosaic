@@ -1,0 +1,363 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* //////////////////////////////////////////// */
+/* BODY FORMAT */
+body {
+    margin-inline: auto;
+    background-color: rgb(241, 241, 241);
+    font-family: 'Poppins', sans-serif;
+}
+
+/* //////////////////////////////////////////// */
+/* HEADER */
+body > header {
+    height: 100vh;
+
+    overflow: hidden;
+    position: relative;
+}
+
+div.hl1 {
+    height: inherit;
+    background-image: url(../img/italy/italy-header.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center 60%;
+    padding: 2rem 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    position: relative;
+}
+
+div.hl2 {
+    width: 80%;
+    margin-inline: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+div.logo {
+    width: 12rem;
+    transition: transform 0.5s;
+}
+
+div.logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+div.logo:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+div.hl2 > nav {
+    margin-top: 0.5rem;
+}
+
+div.hl2 > nav > ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    column-gap: 2rem;
+    
+    list-style: none;
+}
+
+body > header > div > div > nav > ul > li > a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 1.25rem;
+    transition: 0.8s;
+}
+
+body > header > div > div > nav > ul > li:not(:hover) a.a {
+    color: rgba(255, 255, 255, 0.205);
+}
+
+ul.ul:not(:hover) a.a {
+    color: rgb(255, 255, 255);
+}
+
+body > header > div > div > nav > ul > li:hover a.a {
+    font-size: 1.4rem;
+}
+
+/* //////////////////////////////////////////// */
+/* HEADER INTRO */
+div.header-intro {
+    width: 60%;
+    padding: 2rem;
+    position: absolute;
+    bottom: 3rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    row-gap: 1rem;
+    border-radius: 1rem;
+    background-color: rgba(255, 255, 255, 0.062);
+    backdrop-filter: blur(9px);
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
+    overflow: hidden;
+}
+
+div.header-intro h1 {
+    font-size: 3.3rem;
+    color: white;
+    line-height: 1;
+    text-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
+}
+
+div.header-intro p {
+    font-size: 1.2rem;
+    color: white;
+}
+
+div.header-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+div.header-gallery div.img {
+    width: 11rem;
+    height: 7rem;
+    border: 6px solid white;
+    border-radius: 2px;
+    box-shadow: rgba(17, 17, 26, 0.37) 0px 0px 16px;
+    overflow: hidden;
+}
+
+div.header-gallery div.img.one {
+    margin-right: -0.4rem;
+    transform: rotate(2deg);
+}
+
+div.header-gallery div.img.two {
+    width: 10rem;
+    height: 8rem;
+    z-index: -1;
+}
+
+div.header-gallery div.img.three {
+    margin-top: -1.3rem;
+    margin-left: -0.3rem;
+    transform: rotate(-3deg);
+}
+
+div.header-gallery div.img.four {
+    margin-left: -0.6rem;
+    margin-bottom: -0.3rem;
+    transform: rotate(4deg);
+    z-index: -2;
+}
+
+div.header-gallery div.img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* //////////////////////////////////////////// */
+/* CONTENT */
+section.content {
+    width: 70%;
+    margin-inline: auto;
+    margin-top: 4rem;
+}
+
+div.content-intro {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+div.content-intro div.desc {
+    width: 50%;
+    padding: 0 2rem;
+    flex-grow: 1;
+}
+
+div.content-intro div.desc h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    line-height: 1;
+}
+
+div.content-intro div.desc p {
+    font-size: 1.1rem;
+    line-height: 2;
+    text-align: justify;
+}
+
+div.content-intro div.img {
+    width: 19rem;
+    height: 19rem;
+}
+
+div.content-intro div.img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: bottom;
+    border-radius: 8px;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
+}
+
+/* MAIN CONTENT */
+section.content-main {
+    margin: 5rem 0;
+}
+
+section.content-main > h1 {
+    width: 80%;
+    margin-inline: auto;
+    font-size: 3rem;
+}
+
+div.slideshow {
+    width: 1300px;
+    max-width: 100vw;
+    height: 700px;
+    margin: auto;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
+    position: relative;
+    overflow: hidden;
+}
+
+div.images {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    display: flex;
+    width: max-content;
+    transition: 1s ease-in-out;
+}
+
+div.images img {
+    width: 1300px;
+    max-width: 100vw;
+    height: 100%;
+    object-fit: cover;
+}
+
+div.images div.desc {
+    width: 1300px;
+    max-width: 100vw;
+    padding: 3rem;
+    padding-bottom: 6rem;
+    color: white;
+    transition: 1s ease-in-out;
+    border-radius: 3rem 3rem 0 0;
+    background-color: rgba(0, 0, 0, 0.185);
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
+    backdrop-filter: blur(10px);
+}
+
+div.images div.desc h1 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+div.images div.desc p {
+    text-align: justify;
+    line-height: 2;
+}
+
+div.leftright {
+    position: absolute;
+    top: 45%;
+    left: 5%;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+
+div.leftright button {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.26);
+    color: white;
+    border: none;
+    font-family: monospace;
+    font-weight: bold;
+    backdrop-filter: blur(10px);
+    cursor: pointer;
+}
+
+div.descButton {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+
+div.descButton button {
+    padding: 0.5rem;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.26);
+    color: white;
+    border: none;
+    font-family: monospace;
+    font-weight: bold;
+    backdrop-filter: blur(10px);
+    cursor: pointer;
+}
+
+div.descButton button img {
+    width: 100%;
+    height: 100%;
+}
+
+ul.dots {
+    position: absolute;
+    bottom: 10px;
+    color: white;
+    left: 0;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+ul.dots li {
+    list-style: none;
+    width: 10px;
+    height: 10px;
+    background-color: white;
+    margin: 20px;
+    border-radius: 20px;
+    transition: 1s ease-in-out;
+    cursor: pointer;
+}
+
+ul.dots li.active {
+    width: 30px;
+}

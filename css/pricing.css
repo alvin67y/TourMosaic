@@ -1,0 +1,261 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* //////////////////////////////////////////// */
+/* BODY FORMAT */
+body {
+    margin-inline: auto;
+    background-color: rgb(241, 241, 241);
+    font-family: 'Poppins', sans-serif;
+    background-image: url('../img/pricings/background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+}
+
+/* //////////////////////////////////////////// */
+/* HEADER */
+body > header > div {
+    height: inherit;
+    padding: 2rem 0;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    position: relative;
+}
+
+body > header > div > div {
+    width: 80%;
+    margin-inline: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+div.logo {
+    width: 12rem;
+    transition: transform 0.5s;
+}
+
+div.logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+div.logo:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+body > header > div > div > nav {
+    margin-top: 0.5rem;
+}
+
+body > header > div > div > nav > ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    column-gap: 2rem;
+    
+    list-style: none;
+}
+
+body > header > div > div > nav > ul > li > a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.25rem;
+    transition: 0.8s;
+}
+
+body > header > div > div > nav > ul > li:not(:hover) a.a {
+    color: rgba(0, 0, 0, 0.205);
+}
+
+ul.ul:not(:hover) a.a {
+    color: black;
+}
+
+body > header > div > div > nav > ul > li:hover a.a{
+    font-size: 1.4rem;
+}
+
+/* //////////////////////////////////////////// */
+/* PRODUCTS */
+section.products {
+    width: 75%;
+    margin-inline: auto;
+}
+
+section.products > h1 {
+    padding-left: 2rem;
+    font-size: 3rem;
+}
+
+div.japan, div.switzerland, div.italy {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    column-gap: 3rem;
+    margin-bottom: 5rem;
+}
+
+div.products-container {
+    padding: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1rem;
+    background-color: rgba(255, 255, 255, 0.11);
+    backdrop-filter: blur(30px);
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
+    flex-grow: 1;
+}
+
+div.product-img {
+    width: 17rem;
+    height: 17rem;
+    margin-bottom: 0.7rem;
+}
+
+div.product-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0.5rem;
+}
+
+div.product-desc {
+    width: 17rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    row-gap: 0.4rem;
+}
+
+div.product-desc h4, div.product-desc h5, div.product-desc h6 {
+    color: rgb(51, 51, 51);
+}
+
+div.product-desc h6 {
+    font-weight: normal;
+    font-size: 0.7rem;
+}
+
+div.product-specs {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+div.size {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    row-gap: 0.1rem;
+}
+
+/* SWITZERLAND */
+div.switzerland div.products-container {
+    flex-direction: row;
+    column-gap: 3rem;
+}
+
+div.switzerland div.product-desc {
+    width: 20rem;
+}
+
+div.product-img-container {
+    width: 25rem;
+    height: 17rem;
+}
+
+div.product-img-switzerland {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: start;
+    position: relative;
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+
+div.product-img-switzerland > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 1.5s;
+}
+
+div.product-img-switzerland div.leftright {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding-inline: 1rem;
+    position: absolute;
+    bottom: 1rem;
+}
+
+div.product-img-switzerland div.leftright button {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.26);
+    color: white;
+    border: none;
+    font-family: monospace;
+    font-weight: bold;
+    backdrop-filter: blur(10px);
+    cursor: pointer;
+}
+
+div.product-img-switzerland div.leftright button img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+div.itinerary ul {
+    list-style-position: inside;
+    font-size: 0.9rem;
+    color: rgb(51, 51, 51);
+}
+/* SWITZERLAND END */
+
+/* ITALY */
+div.italy div.products-container {
+    flex-direction: row;
+    flex-grow: 1;
+    column-gap: 2rem;
+}
+
+div.italy div.product-img {
+    width: 13rem;
+    height: 13rem;
+    margin: 0;
+}
+
+div.italy div.product-desc {
+    width: 15rem;
+}
+/* ITALY END */

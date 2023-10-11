@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>TourMosaic</title>
+        <link rel="stylesheet" href="css/contactus.css">
+        <script src="java-scripts/contactus.js" defer></script>
+        <link rel="website icon" type="png" href="img/icon.png">
+    </head>
+
+    <body>
+        <header>
+            <div>
+                <div>
+                    <!-- LOGO -->
+                    <a href="index.html"><div class="logo"><img src="img/logo_black.png" alt=""></div></a>
+                    <!-- NAVIGATIONS -->
+                    <nav>
+                        <ul class="ul">
+                            <li><a href="index.html" class="a home">Home</a></li>
+                            <li><a href="index.html#cards" class="a dest">Destinations</a></li>
+                            <li><a href="pricing.html" class="a">Pricings</a></li>
+                            <li><a href="contactus.html" class="a contacts">Contact Us</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+
+        <!-- REVIEWS -->
+        <section class="review">
+            <h1>Reviews</h1>
+            <div class="review-container">
+                <!-- FIRST CUSTOMER -->
+                <div class="customer">
+                    <div class="img">
+                        <img  id="img1" src="img/contactus/customer1.jpg" alt="jpg">
+                    </div>
+                    <div class="customer-info">
+                        <h3>Johanson Smith</h3>
+                    </div>
+                    <p>This website is a game-changer for travelers. It's like having a personal tour guide in your pocket.</p>
+                </div>
+
+                <!-- SECOND CUSTOMER -->
+                <div class="customer">
+                    <div class="img"><img  id="img2" src="img/contactus/customer2.jpg" alt="jpg"></div>
+                    <div class="customer-info">
+                        <h3>Sebastian Anderson</h3>
+                    </div>
+                    <p>I can confidently say that this website is an absolute gem. From planning my trips to discovering hidden gems, it has become my go-to travel companion.</p>
+                </div>
+
+                <!-- THIRD CUSTOMER -->
+                <div class="customer">
+                    <div class="img"><img  id="img3" src="img/contactus/customer3.jpg" alt="jpg"></div>
+                    <div class="customer-info">
+                        <h3>Annie Cooper</h3>
+                    </div>
+                    <p>It's a comprehensive, reliable, and user-centric platform that has enhanced my travel experiences.</p>
+                </div>
+            </div>
+        </section>
+    
+        <!-- EMAIL CONTACT -->
+        <section class="online-contact">
+            <h1>Contact us via e-mail!</h1>
+            <form>
+                <div class="contact"> 
+                    <div class="email input">
+                        <label for="email">Email :</label>
+                        <input 
+                            name="email"
+                            id="email"
+                            type="text"
+                            required>
+                    </div>
+                    <div class="phone input">
+                        <label for="phone">Phone Number :</label>
+                        <input 
+                            name="phone"
+                            id="phone"
+                            type="text"
+                            required>
+                    </div>
+                    <div class="comment input">
+                        <label for="comment">Comment :</label>
+                        <textarea name="comment" id="comment" style="resize: none;" required></textarea>
+                    </div>
+                    <div class="submit">
+                        <label for="submit">Submit:</label>
+                        <input type="submit" id="submit">
+                    </div>
+                </div>
+            </form>
+        </section>
+
+        <!-- PHYSICAL CONTACT -->
+        <section class="physical-contact">
+            <h1>Contact us physically!</h1>
+            <!-- OPERATING HOURS TABLE -->
+            <table>
+                <style>
+                    table, th, td {
+                        border: 2px solid black;
+                        border-collapse: collapse;
+                    }
+
+                    th, td {
+                        padding: 1rem;
+                        text-align: center;
+                    }
+
+                    thead {
+                        background-color: rgb(216, 216, 216);
+                    }
+                </style>
+                <thead>
+                    <tr>
+                        <th>Day</th>
+                        <th>Operating Hour</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th>Mon</th>
+                        <td rowspan="5">7.00am - 5.00pm</td>
+                    </tr>
+                    <tr>
+                        <th>Tue</th>
+                    </tr>
+                    <tr>
+                        <th>Wed</th>
+                    </tr>
+                    <tr>
+                        <th>Thu</th>
+                    </tr>
+                    <tr>
+                        <th>Fri</th>
+                    </tr>
+                    <tr>
+                        <th>Sat</th>
+                        <td>7.00am - 1.00pm</td>
+                    </tr>
+                    <tr>
+                        <th>Sun</th>
+                        <td colspan="2">Closed</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="address">
+                <h1>Physical Address</h1>
+                <address>
+                    Tour Mosaic Sdn Bhd <br>
+                    21, Jalan Kekasih <br>
+                    Klang, Selangor <br>
+                    Malaysia
+                </address>
+            </div>
+        </section>
+    </body>
+</html>
